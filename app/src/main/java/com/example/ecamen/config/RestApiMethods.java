@@ -1,4 +1,4 @@
-package com.example.ecamen.config;
+package com.example.ecamen.Config;
 
 public class RestApiMethods
 {
