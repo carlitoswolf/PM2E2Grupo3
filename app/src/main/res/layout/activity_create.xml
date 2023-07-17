@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1F1"
+    android:orientation="vertical"
+    tools:context=".ActivityCreate">
+
+    <ImageView
+        android:id="@+id/ViewFirma"
+        android:layout_width="168dp"
+        android:layout_height="146dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#E3DDDD"
+        android:contentDescription="Imagen"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btnFirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:text="FIRMA DIGITAL" />
+
+    <EditText
+        android:id="@+id/editTextNombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="#121111"
+        android:textColorHint="#817F7F" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teléfono"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:textColor="#121111"
+        android:textColorHint="#817F7F" />
+
+    <EditText
+        android:id="@+id/editTextLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        android:inputType="numberDecimal"
+        android:maxLines="2"
+        android:textColor="#121111"
+        android:textColorHint="#817F7F" />
+
+    <EditText
+        android:id="@+id/editTextLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        android:inputType="numberDecimal"
+        android:maxLines="2"
+        android:textColor="#121111"
+        android:textColorHint="#817F7F" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:text="Lista de Contactos" />
+
+
+</LinearLayout>

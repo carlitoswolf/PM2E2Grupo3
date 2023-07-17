@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:background="#80DEEA"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.example.ecamen.CustomView
+        android:id="@+id/custom_view"
+        android:layout_width="395dp"
+        android:layout_height="131dp"
+        android:background="#F6F6F6" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_view"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_view"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="210dp"
+        android:text="Clear" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clear_button"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="259dp"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="262dp"
+        android:text="Teléfono" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefono"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="266dp"
+        android:text="Latitud" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLatitud"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="262dp"
+        android:text="Longitud" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number|numberDecimal|numberSigned" />
+
+    <fragment
+        android:id="@+id/fMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="377dp"
+        android:layout_height="131dp"
+        android:layout_below="@+id/txtLongitud"
+        android:layout_marginTop="10dp"
+        map:cameraZoom="10"
+        map:uiRotateGestures="true"
+        map:uiZoomControls="true" />
+
+    <Button
+        android:id="@+id/btnSalvarContacto"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLongitud"
+        android:layout_alignStart="@+id/custom_view"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="160dp"
+        android:text="Salvar Contacto" />
+
+    <Button
+        android:id="@+id/btnTodosContactos"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLongitud"
+        android:layout_alignEnd="@+id/custom_view"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="1dp"
+        android:text="Contactos Salvados" />
+
+</RelativeLayout>
